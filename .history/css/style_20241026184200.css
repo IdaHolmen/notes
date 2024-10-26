@@ -111,6 +111,7 @@ body {
 .switch {
     width: 3.75rem;
     height: 2rem;
+    background-color: var(--dark-card-color);
     border-radius: 2rem;
     border: 1px solid var(--secondary-color);
     display: inline-block;
@@ -124,13 +125,17 @@ body {
 }
 
 .slider {
+    width: 3.75rem;
+    height: 2rem;
+    background-color: var(--dark-card-color);
+    border-radius: 2rem;
+    border: 1px solid var(--secondary-color);
     position: absolute;
     cursor: pointer;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: var(--dark-card-color);
     -webkit-transition: 0.4s;
     transition: 0.4s;
 }
@@ -142,27 +147,31 @@ body {
 .slider:before {
     position: absolute;
     content: '';
-    height: 1.5rem;
-    width: 1.5rem;
-    left: 3px;
-    bottom: 3px;
+    height: 1rem;
+    width: 1rem;
+    left: 8px;
+    bottom: 6px;
     background-color: var(--primary-color);
     -webkit-transition: 0.4s;
     transition: 0.4s;
 }
 
 input:checked + .slider {
-    background-color: var(--dark-card-color);
+    background-color: var(--color-accent-11);
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px;
 }
 
 input:checked + .slider:before {
-    -webkit-transform: translateX(1.75rem);
-    -ms-transform: translateX(1.75rem);
-    transform: translateX(1.75rem);
+    -webkit-transform: translateX(72px);
+    -ms-transform: translateX(72px);
+    transform: translateX(72px);
 }
 
 .slider.round {
-    border-radius: 2.125rem;
+    border-radius: 34px;
 }
 
 .slider.round:before {

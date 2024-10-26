@@ -155,6 +155,10 @@ input:checked + .slider {
     background-color: var(--dark-card-color);
 }
 
+input:checked + .switch {
+    border: 1px solid var(--primary-color);
+}
+
 input:checked + .slider:before {
     -webkit-transform: translateX(1.75rem);
     -ms-transform: translateX(1.75rem);

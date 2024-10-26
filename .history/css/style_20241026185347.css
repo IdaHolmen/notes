@@ -156,9 +156,9 @@ input:checked + .slider {
 }
 
 input:checked + .slider:before {
-    -webkit-transform: translateX(1.75rem);
-    -ms-transform: translateX(1.75rem);
-    transform: translateX(1.75rem);
+    -webkit-transform: translateX(1.7rem);
+    -ms-transform: translateX(1.7rem);
+    transform: translateX(1.7rem);
 }
 
 .slider.round {

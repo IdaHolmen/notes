@@ -145,7 +145,7 @@ body {
     height: 1.5rem;
     width: 1.5rem;
     left: 3px;
-    bottom: 3px;
+    bottom: 6px;
     background-color: var(--primary-color);
     -webkit-transition: 0.4s;
     transition: 0.4s;
@@ -156,9 +156,9 @@ input:checked + .slider {
 }
 
 input:checked + .slider:before {
-    -webkit-transform: translateX(1.75rem);
-    -ms-transform: translateX(1.75rem);
-    transform: translateX(1.75rem);
+    -webkit-transform: translateX(1.7rem);
+    -ms-transform: translateX(1.7rem);
+    transform: translateX(1.7rem);
 }
 
 .slider.round {

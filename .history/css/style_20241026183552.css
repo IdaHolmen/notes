@@ -111,6 +111,7 @@ body {
 .switch {
     width: 3.75rem;
     height: 2rem;
+    background-color: var(--dark-card-color);
     border-radius: 2rem;
     border: 1px solid var(--secondary-color);
     display: inline-block;
@@ -130,41 +131,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: var(--dark-card-color);
+    /* background-color: var(--primary-color); */
     -webkit-transition: 0.4s;
     transition: 0.4s;
-}
-
-.slider:hover {
-    background: #595959;
-}
-
-.slider:before {
-    position: absolute;
-    content: '';
-    height: 1.5rem;
-    width: 1.5rem;
-    left: 3px;
-    bottom: 3px;
-    background-color: var(--primary-color);
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
-}
-
-input:checked + .slider {
-    background-color: var(--dark-card-color);
-}
-
-input:checked + .slider:before {
-    -webkit-transform: translateX(1.75rem);
-    -ms-transform: translateX(1.75rem);
-    transform: translateX(1.75rem);
-}
-
-.slider.round {
-    border-radius: 2.125rem;
-}
-
-.slider.round:before {
-    border-radius: 50%;
 }
