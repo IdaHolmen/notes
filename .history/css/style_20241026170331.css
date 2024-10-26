@@ -1,0 +1,21 @@
+:root {
+    --primary-color: #ebeaea;
+    --secondary-color: #171515;
+    --dark-card-color: #3c3c3c;
+    --light-card-color: #f0edc7;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.notes-header {
+    width: 100%;
+    height: 10%;
+}
+
+.main-container {
+    width: 100%;
+    height: 90%;
+}
