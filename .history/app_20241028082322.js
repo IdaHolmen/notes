@@ -7,10 +7,10 @@ const hamburgerMenu = document.querySelector('.hamburger-menu');
 // EVENT LISTENERS
 hamburgerButton.addEventListener('click', ()=> {
   defaultContainer.style.display = 'none';
-  hamburgerMenu.classList.add('is-active');
+  hamburgerMenu.style.display = 'flex';
 });
 
 exitButton.addEventListener('click', ()=> {
   defaultContainer.style.display = 'flex';
-  hamburgerMenu.classList.remove('is-active');
+  hamburgerMenu.classList.toggle('is-active');
 });

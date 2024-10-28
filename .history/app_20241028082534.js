@@ -12,5 +12,5 @@ hamburgerButton.addEventListener('click', ()=> {
 
 exitButton.addEventListener('click', ()=> {
   defaultContainer.style.display = 'flex';
-  hamburgerMenu.classList.remove('is-active');
+  hamburgerMenu.classList.add('is-active');
 });
