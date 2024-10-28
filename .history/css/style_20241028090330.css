@@ -203,8 +203,8 @@ input:checked + .slider:before {
     background-color: var(--dark-card-color);
 }
 
-.dark-mode .header-buttons:active {
-    background-color: #696969;
+.dark-mode .header-images:hover {
+    background-color: var(--dark-card-color);
 }
 
 .dark-mode .hamburger-menu {

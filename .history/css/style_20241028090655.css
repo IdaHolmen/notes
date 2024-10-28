@@ -204,7 +204,7 @@ input:checked + .slider:before {
 }
 
 .dark-mode .header-buttons:active {
-    background-color: #696969;
+    background-color: #3c3c3c;
 }
 
 .dark-mode .hamburger-menu {

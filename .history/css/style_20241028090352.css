@@ -203,10 +203,6 @@ input:checked + .slider:before {
     background-color: var(--dark-card-color);
 }
 
-.dark-mode .header-buttons:active {
-    background-color: #696969;
-}
-
 .dark-mode .hamburger-menu {
     background-color: var(--secondary-color);
 }

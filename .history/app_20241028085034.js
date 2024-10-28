@@ -5,7 +5,6 @@ const exitButton = document.querySelector('.exit-button');
 const defaultContainer = document.querySelector('.default-container');
 const hamburgerMenu = document.querySelector('.hamburger-menu');
 const toggleModeSwitch = document.querySelector('.checkbox');
-const svgIcons = document.querySelectorAll('.header-images');
 
 // EVENT LISTENERS
 hamburgerButton.addEventListener('click', ()=> {
@@ -20,12 +19,4 @@ exitButton.addEventListener('click', ()=> {
 
 toggleModeSwitch.addEventListener('change', ()=> {
   body.classList.toggle('dark-mode');
-
-  svgIcons.forEach(icon => {
-    if (document.body.classList.contains('dark-mode')) {
-        icon.style.filter = 'invert(100%)';
-    } else {
-        icon.style.filter = 'invert(0%)';
-    }
-});
 });

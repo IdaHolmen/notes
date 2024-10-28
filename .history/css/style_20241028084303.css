@@ -63,7 +63,6 @@ body {
 .header-images {
     width: 1.5rem;
     height: 1.5rem;
-    filter: invert(0%);
 }
 
 .default-text-container {
@@ -193,24 +192,4 @@ input:checked + .slider:before {
 .dark-mode {
     background-color: var(--secondary-color);
     color: var(--primary-color);
-}
-
-.dark-mode .header-images {
-    filter: invert(100%);
-}
-
-.dark-mode .header-buttons:hover {
-    background-color: var(--dark-card-color);
-}
-
-.dark-mode .header-buttons:active {
-    background-color: #696969;
-}
-
-.dark-mode .hamburger-menu {
-    background-color: var(--secondary-color);
-}
-
-.dark-mode .switch {
-    border: 1px solid var(--primary-color);
 }
