@@ -1,57 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Notes</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes</title>
 
-        <link rel="stylesheet" href="./css/reset.css" />
-        <link rel="stylesheet" href="./css/style.css" />
-    </head>
-    <body>
-        <main class="main-container">
-            <section class="default-container">
-                <header class="default-header">
-                    <button class="hamburger-button header-buttons">
-                        <img src="./assets/hamburger.svg" alt="Hamburger menu" class="hamburger-image header-images" />
-                    </button>
-                    <h1 class="headline">Notes</h1>
-                    <button class="add-notes-button header-buttons">
-                        <img
-                            src="./assets/plus.svg"
-                            alt="A plus sign to add notes"
-                            class="add-notes-image header-images"
-                        />
-                    </button>
-                </header>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <main class="main-container">
+      <section class="default-container">
+        <header class="default-header">
+          <button class="hamburger-button header-buttons">
+            <img src="./assets/hamburger.svg" alt="Hamburger menu" class="hamburger-image header-images" />
+          </button>
+          <h1 class="headline">Notes</h1>
+          <button class="add-notes-button header-buttons">
+            <img src="./assets/plus.svg" alt="A plus sign to add notes" class="add-notes-image header-images" />
+          </button>
+        </header>
 
-                <div class="default-text-container">
-                    <p class="default-text">Tap the + to add a new note</p>
-                </div>
-            </section>
+        <div class="default-text-container">
+          <p class="default-text">Tap the + to add a new note</p>
+        </div>
+      </section>
 
-            <nav class="hamburger-menu">
-                <header class="hamburger-header">
-                    <h2 class="headline">Settings</h2>
-                    <button class="exit-button header-buttons">
-                        <img src="./assets/exit.svg" alt="Exit button" class="exit-image header-images" />
-                    </button>
-                </header>
+      <nav class="hamburger-menu">
+        <header class="hamburger-header">
+          <h2 class="headline">Settings</h2>
+          <button class="exit-button header-buttons">
+            <img src="./assets/exit.svg" alt="Exit button" class="exit-image header-images" />
+          </button>
+        </header>
 
-                <div class="hamburger-main-container">
-                    <div class="mode-container">
-                        <p class="mode-text">Light mode</p>
+        <div class="hamburger-main-container">
+          <div class="mode-container">
+            <p class="mode-text">Light mode</p>
 
-                        <label class="switch">
-                            <input type="checkbox" class="checkbox" />
-                            <span class="slider round"></span>
-                        </label>
+            <label class="switch">
+              <input type="checkbox" class="checkbox" />
+              <span class="slider round"></span>
+            </label>
 
-                        <p class="mode-text">Dark mode</p>
-                    </div>
-                </div>
-            </nav>
-        </main>
-        <script src="app.js"></script>
-    </body>
+            <p class="mode-text">Dark mode</p>
+          </div>
+        </div>
+      </nav>
+
+      <section class="add-notes">
+        <header class="add-notes-header">
+          <h2 class="headline">Add a note</h2>
+        </header>
+
+        <div class="title-container">
+          <label for="title" class="title">Title:</label>
+          <input type="text" class="title-input" />
+        </div>
+
+        <div class="textarea-container">
+          <label for="notes" class="note">Note:</label>
+          <textarea name="note-input" id="note-input" cols="30" rows="5" placeholder="Max 140 characters"></textarea>
+        </div>
+
+        <div class="button-section">
+          <button class="cancel-button">Cancel</button>
+          <button class="add-button">Add note</button>
+        </div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
 </html>
